@@ -6,7 +6,7 @@ public class Main2 {
     public static void main(String[] args) {
         System.out.println(" TESTANDO A NOSSA LISTAVETOR");
 
-        ListaVetor<String> lista = new ListaVetor<>();
+        Lista<String> lista = new ListaVetor<>();
 
         lista.add("Java");
         lista.add("Python");

@@ -1,6 +1,6 @@
 package ProjetoLists;
 
-public class ListaEncadeada<T> {
+public class ListaEncadeada<T> implements Lista<T>{
 
     private class No {
         T valor;
@@ -103,5 +103,24 @@ public class ListaEncadeada<T> {
         }
 
         return false;
+    }
+
+    @Override
+    public T get(int pos) {
+        if (pos < 0 || pos >= this.tamanho) {
+            throw new IllegalArgumentException("Posição inválida para busca: " + pos);
+        }
+
+        No atual = this.inicio;
+
+        for (int i = 0; i < pos; i++) {
+            atual = atual.proximo;
+        }
+        return atual.valor;
+    }
+
+    @Override
+    public int size() {
+        return this.tamanho;
     }
 }

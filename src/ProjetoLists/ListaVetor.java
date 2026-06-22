@@ -1,7 +1,7 @@
 package ProjetoLists;
 
 
-public class ListaVetor<T> {
+public class ListaVetor<T> implements Lista<T>{
     private T[] itens;
     private int tamanho; // tamanho das coisas adicionadas
 

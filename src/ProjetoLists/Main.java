@@ -4,7 +4,7 @@ package ProjetoLists;
 
 public class Main {
     public static void main(String[] args) {
-        ListaEncadeada<String> lista = new ListaEncadeada<>();
+        Lista<String> lista = new ListaEncadeada<>();
 
         System.out.println("TESTANDO OS MÉTODOS ADD");
 
@@ -35,5 +35,10 @@ public class Main {
         } catch (IllegalArgumentException e) {
             System.out.println("Exceção capturada com sucesso: " + e.getMessage());
         }
+
+        System.out.println("\n TESTANDO O GET E SIZE NA LISTA ENCADEADA");
+        lista.add("Macarrão");
+        System.out.println("-> Tamanho atual da lista encadeada: " + lista.size()); // Deve mostrar o tamanho correto
+        System.out.println("-> Item que ficou na posição 0: " + lista.get(0)); // Deve mostrar o item correto
     }
 }
