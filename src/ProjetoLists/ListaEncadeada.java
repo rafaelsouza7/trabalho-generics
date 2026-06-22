@@ -37,11 +37,8 @@ public class ListaEncadeada<T> {
             for (int i = 0; i < pos - 1; i++) {
                 atual = atual.proximo;
             }
-
-            // O novo nó é igual o próximo nó do atual
-            novoNo.proximo = atual.proximo;
-            // O próximo nó do atual é igual um novo nó
-            atual.proximo = novoNo;
+            novoNo.proximo = atual.proximo; // O novo nó é igual o próximo nó do atual
+            atual.proximo = novoNo; // O próximo nó do atual é igual um novo nó
         }
 
         this.tamanho++;
@@ -52,8 +49,7 @@ public class ListaEncadeada<T> {
     }
 
     public T remove(int pos) {
-        // O máximo de tamanho é -1
-        if (pos < 0 || pos >= this.tamanho) {
+        if (pos < 0 || pos >= this.tamanho) { // O máximo de tamanho é -1
             throw new IllegalArgumentException("Posição fora do intervalo para remoção: " + pos);
         }
 

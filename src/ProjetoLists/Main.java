@@ -1,5 +1,7 @@
 package ProjetoLists;
 
+// Main pra listaEncadeada
+
 public class Main {
     public static void main(String[] args) {
         ListaEncadeada<String> lista = new ListaEncadeada<>();
