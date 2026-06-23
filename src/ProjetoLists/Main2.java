@@ -1,6 +1,6 @@
 package ProjetoLists;
 
-// Main pra Lista Vetor
+// Main pra ListaVetor
 
 public class Main2 {
     public static void main(String[] args) {
