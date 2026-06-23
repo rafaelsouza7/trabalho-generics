@@ -5,7 +5,7 @@ package ProjetoLists;
 public class Main3 {
     public static void main(String[] args) {
 
-        System.out.println("--- TESTANDO COM LISTA VETOR (Inteiros) ---");
+        System.out.println(" TESTANDO COM LISTA VETOR (Inteiros)");
         Lista<Integer> notas = new ListaVetor<>();
         notas.add(5);
         notas.add(10);
@@ -22,7 +22,6 @@ public class Main3 {
         nomes.add("Abelha");
         nomes.add("Macaco");
 
-        // Na ordem alfabética (String já implementa Comparable nativamente)
         System.out.println("Último nome alfabético (Max): " + ListaUtil.max(nomes)); // Deve mostrar Zebra
         System.out.println("Primeiro nome alfabético (Min): " + ListaUtil.min(nomes)); // Deve mostrar Abelha
         System.out.println("Quantas 'Zebra' existem? " + ListaUtil.count(nomes, "Zebra")); // Deve mostrar 1
